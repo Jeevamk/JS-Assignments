@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- question16 -->
+    <button onclick="sumMulti()">Sum of multiplies of 3 | 5</button>
+    <p id="sumlt"></p>
+
+    <script>
+        function sumMulti() {
+            const num = parseInt(prompt('enter a number:'));
+            sum = 0;
+            for (let i = 0; i <= num; i++) {
+                if (i % 3 == 0 || i % 5 == 0) {
+                    sum += i;
+                }
+            }
+            document.getElementById('sumlt').innerHTML = sum;
+
+        }
+
+    </script>
+</body>
+
+</html>

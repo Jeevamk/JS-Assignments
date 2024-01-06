@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- question6 -->
+    <button onclick="secondlarge()">Second largest</button>
+    <p id="sec"></p>
+    <p id="demo"></p>
+    <script>
+        function secondlarge() {
+            let size=prompt("enter the size of array:");
+            let newarr=[];
+            for(let i=0;i<size;i++) {
+                newarr[i]=prompt('enter the array');
+            }
+            document.getElementById('sec').innerHTML=newarr;
+            newarr.sort(function(a,b){
+                return a-b
+            });
+            document.getElementById('demo').innerHTML=newarr.at(-2);
+
+        }
+
+    </script>
+</body>
+</html>

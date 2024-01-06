@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- question8 -->
+    <button onclick="sumNum()">Sum of All Numbers</button>
+    <p id="demo"></p>
+
+
+    <script>
+        function sumNum() {
+            let limit=prompt('Enter the limit:','');
+            let arr=[];
+            let sum=0;
+            for(let i=0;i<limit;i++) {
+                arr[i]=prompt('enter the array elements');
+                sum+=parseInt(arr[i]);
+            }
+            document.getElementById('demo').innerHTML='Sum of number is:'+sum;
+        }
+    </script>
+</body>
+</html>

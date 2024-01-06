@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- question5 -->
+    <h2>Prime number or Not</h2>
+    <button onclick="prime()">Is prime?</button>
+
+    <script>
+        function prime() {
+            let num=prompt("Enter a number:",'');
+            for (let i=2;i<num;i++) {
+                if (num%i==0) {
+                    var prim=1;
+                    break;
+                }
+                else{
+                    prim=0;
+                }
+            }
+            if (prim==0) {
+                alert ("it is a prime number");
+            }else{
+                alert ("It is not a prime number");
+            }
+        }
+
+    </script>
+</body>
+</html>

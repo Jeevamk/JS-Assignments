@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- question3 -->
+    <button onclick="sortarr()">Sort an array</button>
+    <p id="demo"></p>
+    <script>
+        function sortarr() {
+            let limit = prompt("enter the limit:", '');
+            let newarr = [];
+
+            for (let i = 0; i < limit; i++) {
+                newarr[i] = prompt("enter a array:", '');
+            }
+            document.getElementById('demo').innerHTML = newarr;
+
+            let arr1 = newarr.sort(function (a, b) {
+                return a - b;
+            });
+            document.getElementById('demo').innerHTML=arr1;
+           
+
+        }
+
+    </script>
+</body>
+
+</html>

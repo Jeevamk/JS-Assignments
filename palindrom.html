@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- question12 -->
+    <button onclick="palindrom()">Palindrom</button>
+    <p id="demo"></p>
+
+    <script>
+        function palindrom() {
+            let string=prompt('Enter the string:','');
+            let reverse=string.split("").reverse().join("");
+            if(string==reverse) {
+                document.getElementById('demo').innerHTML='It is palindrom';
+            }else{
+                document.getElementById('demo').innerHTML='It is not palindrom';
+            }
+        }
+    </script>
+</body>
+</html>

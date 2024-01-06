@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- question10 -->
+    <button onclick="maxmin()">Maximum and Minimum element</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        function maxmin() {
+            let limit=prompt('enter the limit:','');
+        let newarr=[];
+        for (let i=0;i<limit;i++){
+            newarr[i]=prompt('enter the elements:','');
+        }
+        
+        newarr.sort(function(a,b){
+            return a-b;
+        })
+        document.getElementById('demo').innerHTML=newarr;
+        document.getElementById('demo1').innerHTML='Maximum number is'+newarr.at(-1);
+        document.getElementById('demo2').innerHTML='Minimum number is'+newarr.at(0);
+        }
+        
+    </script>
+</body>
+</html>

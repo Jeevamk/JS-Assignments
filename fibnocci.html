@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- question14 -->
+    <button onclick="fibonacci()">fibonacci Series</button>
+    <p id="fibn"></p>
+
+    <script>
+        function fibonacci() {
+            const num =parseInt( prompt('Enter the limit:'));
+            let n1 = 0, n2 = 1, n3;
+            let fib='';
+             for (let i=1;i<=num;i++){
+                fib += n1 +'<br>';
+                n3=n1+n2;
+                n1=n2;
+                n2=n3;
+
+               
+             }
+             document.getElementById('fibn').innerHTML='The Fibonacci Series is : '+ fib;
+
+        }
+
+
+    </script>
+</body>
+
+</html>

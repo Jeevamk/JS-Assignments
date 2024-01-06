@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- question1 -->
+    <button onclick="maximum()">maximum</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        function maximum() {
+            let size = prompt("enter the size of array:", '');
+            let elearr = [];
+            for (let i = 0; i < size; i++) {
+                elearr[i] = prompt("enter the arrray:");
+
+            }
+            document.getElementById('demo').innerHTML = "The new array is :"+ elearr;
+            elearr.sort(function (a, b) { return a - b });
+            document.getElementById('demo1').innerHTML = elearr.at(-1);
+
+        }
+
+    </script>
+</body>
+
+</html>

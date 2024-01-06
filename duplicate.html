@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- question7 -->
+    <button onclick="dup()">Duplicate</button>
+    <p id="demo"></p>
+
+    <script>
+        function dup() {
+            let limit=prompt('Enter the size of array:','');
+            let duparr=[];
+            let uni = []
+            for (i=0;i<limit;i++) {
+                duparr[i]=prompt('Enter the array elements:');
+                uni = duparr.filter((element,i) => duparr.indexOf(element)===i);
+            }
+            
+            document.getElementById('demo').innerHTML=`${uni}`;
+
+        }
+       
+    </script>
+</body>
+</html>
